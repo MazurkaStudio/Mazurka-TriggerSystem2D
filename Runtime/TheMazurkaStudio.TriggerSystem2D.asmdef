@@ -1,0 +1,17 @@
+{
+    "name": "TheMazurkaStudio.TriggerSystem2D",
+    "rootNamespace": "TheMazurkaStudio.TriggerSystem2D",
+    "references": [
+        "GUID:4307f53044263cf4b835bd812fc161a4",
+        "GUID:12cac5c447e0ab3418e26c84cc69a7df"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
