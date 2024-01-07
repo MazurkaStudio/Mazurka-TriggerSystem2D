@@ -13,7 +13,7 @@ namespace TheMazurkaStudio.TriggerSystem2D
 
         protected Trigger _trigger;
 
-        private void OnEnable()
+        protected virtual  void OnEnable()
         {
             _trigger = GetComponentInParent<Trigger>();
 
@@ -27,7 +27,7 @@ namespace TheMazurkaStudio.TriggerSystem2D
             _trigger.TriggerWasExited += TriggerExit;
         }
 
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
             if (_trigger == null) return;
             
