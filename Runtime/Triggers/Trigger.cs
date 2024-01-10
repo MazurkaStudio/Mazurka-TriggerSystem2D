@@ -90,16 +90,16 @@ namespace TheMazurkaStudio.TriggerSystem2D
         }
 
         
-        private readonly HashSet<TriggerAdditionalCondition> _allConditions = new HashSet<TriggerAdditionalCondition>();
+        private readonly HashSet<TriggerAdditionalCondition> _allConditions = new();
 
         public void AddTriggerCondition(TriggerAdditionalCondition condition)
-        {
+        { 
             if(!_allConditions.Contains(condition)) _allConditions.Add(condition);
         }
         
         public void RemoveTriggerCondition(TriggerAdditionalCondition condition)
         {
-            if(!_allConditions.Contains(condition)) _allConditions.Add(condition);
+            if(_allConditions.Contains(condition)) _allConditions.Remove(condition);
         }
     }
 }
