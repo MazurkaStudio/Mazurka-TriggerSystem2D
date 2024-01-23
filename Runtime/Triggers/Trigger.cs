@@ -14,7 +14,6 @@ namespace TheMazurkaStudio.TriggerSystem2D
         public event Action<Collider2D> TriggerWasExited;
         
         [SerializeField, BoxGroup("Parameters")] protected bool _useOnce;
-        [SerializeField, BoxGroup("Parameters"), Layer] protected int _forceLayer;
         [SerializeField, BoxGroup("Parameters")] protected bool _detectTriggers;
 
         [SerializeField, BoxGroup("Parameters")] protected bool _checkEnter = true;
